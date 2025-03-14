@@ -540,7 +540,7 @@ def lasso_highlight_image(
             # Extend target_color_list starting with the last color
             color_idx = target_color_list[-1] + 1 if target_color_list else 0
             target_color_list += [
-                (color_idx + i) % len(color_list) for i, _ enumerate(atom_indices_list_of_list)
+                (color_idx + i) % len(color_list) for i, _ in enumerate(atom_indices_list_of_list)
             ]
 
         atoms_idx_list.append(atom_idx_list)
